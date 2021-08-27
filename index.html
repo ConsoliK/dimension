@@ -11,12 +11,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		 
-		  var consentText = 'Here goes consent text from your website.';
-	
- 	 var clientDecision = true; // if user agreed and provided consent
-  	
-  	smartlook('consentForms', clientDecision ? consentText : false);
+		<script>
+  // in this variable inser your consent
+  var consentText = 'Here goes consent text from your website.';
+
+  // choose only one variable
+  var clientDecision = true; // if user agreed and provided consent
+  
+  smartlook('consentForms', clientDecision ? consentText : false);
+</script>
 		<script type='text/javascript'>
   window.smartlook||(function(d) {
     var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];

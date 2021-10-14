@@ -20,16 +20,14 @@
     })(document);
     smartlook('init', 'e811911ea1f471e970bf0fddb7847f776fd25af0');
 		
-			
- // in this variable inser your consent
-  var consentText = 'Here goes consent text from your website.';
-
-  // choose only one variable
-  var clientDecision = true; // if user agreed and provided consent
+	<script>
+  smartlook(function() {
+    console.log(smartlook.consent.api)
+    console.log(smartlook.consent.forms)
+    console.log(smartlook.consent.ip)
+  });
+</script>		
  
-  smartlook('consentIP', clientDecision ? consentText : false);
-  smartlook('consentAPI', clientDecision ? consentText : false);
-			  </script>
 
 		
 			<script>

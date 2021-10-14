@@ -21,17 +21,28 @@
     smartlook('init', 'e811911ea1f471e970bf0fddb7847f776fd25af0');	
 			
 	
-  smartlook(function() {
-    console.log(smartlook.consent.api)
-    console.log(smartlook.consent.forms)
-    console.log(smartlook.consent.ip)
-  });
+var consentText = 'Here goes consent text from your website.';
 
-	
+  // choose only one variable
+  var clientDecision = true; // if user agreed and provided consent
+  
+  smartlook('consentForms', clientDecision ? consentText : false);
 
-  smartlook('consentForms', clientDecision ? consentText : true);
-  smartlook('consentIP', clientDecision ? consentText : true);
-  smartlook('consentAPI', clientDecision ? consentText : true);
+  // in this variable inser your consent
+  var consentText = 'Here goes consent text from your website.';
+
+  // choose only one variable
+  var clientDecision = true; // if user agreed and provided consent
+
+  smartlook('consentIP', clientDecision ? consentText : false);
+
+  // in this variable inser your consent
+  var consentText = 'Here goes consent text from your website.';
+
+  // choose only one variable
+  var clientDecision = true; // if user agreed and provided consent
+  
+  smartlook('consentAPI', clientDecision ? consentText : false);
 		
 </script>
 		

@@ -21,14 +21,9 @@
     smartlook('init', 'e811911ea1f471e970bf0fddb7847f776fd25af0');	
 	
 
-  smartlook(function() {
-    console.log(smartlook.consent.api)
-    console.log(smartlook.consent.forms)
-    console.log(smartlook.consent.ip)
-  });
-
-	smartlook('consentForms', true);
-			
+  smartlook('consentForms', clientDecision ? consentText : true);
+  smartlook('consentIP', clientDecision ? consentText : true);
+  smartlook('consentAPI', clientDecision ? consentText : true);
 		
 </script>
 		

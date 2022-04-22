@@ -22,29 +22,8 @@
 </script>	
 			
 	
-var consentText = 'Here goes consent text from your website.';
-
-  // choose only one variable
-  var clientDecision = true; // if user agreed and provided consent
-  
-  smartlook('consentForms', clientDecision ? consentText : false);
-
-  // in this variable inser your consent
-  var consentText = 'Here goes consent text from your website.';
-
-  // choose only one variable
-  var clientDecision = true; // if user agreed and provided consent
-
-  smartlook('consentIP', clientDecision ? consentText : false);
-
-  // in this variable inser your consent
-  var consentText = 'Here goes consent text from your website.';
-
-  // choose only one variable
-  var clientDecision = true; // if user agreed and provided consent
-  
-  smartlook('consentAPI', clientDecision ? consentText : false);
-		
+<script>
+  smartlook('record', { forms: true, ips: true, api: true });
 </script>
 	
 	<script type="text/javascript">

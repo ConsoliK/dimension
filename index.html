@@ -27,13 +27,16 @@ window.dataLayer = window.dataLayer || [];
 <script>
   smartlook('record', { forms: true, ips: true, api: true });
 </script>
-	
-<script>		
-		smartlook('identify', 123, {
-  "name": "John Doe"
-  
+
+		<script>
+smartlook('identify', 123, {
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "package": "Premium",
+  "currency": "USD",
+  "price": 150
 })
-	</script>	
+		</script>	
 		
 	</head>
 	<body class="is-preload">
